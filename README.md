@@ -34,3 +34,15 @@ function FindProxyForURL(url, host) {
     return `DIRECT`
 }
 ```
+
+## Enable proxy
+
+There must be a proxy at `localhost:1080` for this to work.
+
+```bash
+ssh -D 1080 basion_host
+```
+
+The above command will proxy requests to `localhost:1080` through to `bastion_host`.
+
+Run this in a terminal to enable requests behind the firewall.
