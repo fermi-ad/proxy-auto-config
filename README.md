@@ -1,10 +1,12 @@
 # Firefox proxy auto-config (PAC)
 
-I'm exploring this because I would like to have a browser that can search Google while accessing resources only available behind the Controls firewall at Fermilab.
+I explored this because I wanted have a browser that can search Google while accessing resources only available behind a firewall.
 
 My first Googlel search led me to [StackOverflow](https://superuser.com/questions/929861/how-to-enable-a-proxy-in-firefox-only-for-some-urls-and-not-for-every-page-i-vis) and consequently to [MozillaZine](http://forums.mozillazine.org/viewtopic.php?f=38&t=281605) and [WikiPedia](https://en.wikipedia.org/wiki/Proxy_auto-config).
 
 These references and example were enough to get me started and I took the opportunity to refactor it and make it more flexible.
+
+Originally, I was using Firefox's manual proxy to get behind the firewall, but the method sends all traffic to the proxy with a list of exceptions. I want the other way around. I want only certain request to go behind the firewall. Proxy auto-config allows custom code to route traffic and solves my problem.
 
 ## Example
 
