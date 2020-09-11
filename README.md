@@ -10,15 +10,12 @@ These references and example were enough to get me started and I took the opport
 
 ```javascript
 function FindProxyForURL(url, host) {
-    const proxyList = [`fnal.gov`]
-    const shouldProxyHost = domain => {
-        return dnsDomainIs(host.toLowerCase(), domain)
-    }
+  host = host.toLowerCase();
+  if (dnsDomainIs(host, "blocked.com") ||
+      dnsDomainIs(host, "censored.stuff.com"))
+    return "PROXY 123.45.67.89:80"; // (IP:port)
 
-    if (proxyList.some(shouldProxyHost))
-        return `SOCKS5 localhost:1080`
-
-    return `DIRECT`
+  return "DIRECT";
 }
 ```
 
