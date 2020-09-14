@@ -39,7 +39,7 @@ function FindProxyForURL(url, host) {
 
 ## Enable proxy
 
-There must be a proxy at `localhost:1080` for this to work.
+There must be a proxy at `localhost:1080` for pages within the firewall to work.
 
 ```bash
 ssh -D 1080 basion_host
