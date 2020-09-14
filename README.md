@@ -48,3 +48,31 @@ ssh -D 1080 basion_host
 The above command will proxy requests to `localhost:1080` through to `bastion_host`.
 
 Run this in a terminal to enable requests behind the firewall.
+
+## Install proxy.pac
+
+Firefox enables users to proxy only the traffic from the browser rather than the whole system. Other browser use the OS proxy configuration to proxy traffic.
+
+### Firefox
+
+In the Firefox settings `about:preferences#general`>Network Settings there is a field for `Automatic proxy configuration URL` where you can link to an external URL or a local file using `file://`.
+
+The file must be named `proxy.pac`.
+
+### OS wide proxy
+
+The problem with a system wide proxy is that if the proxy is broken then redirections to that proxy fail. This is why I prefer to limit this redirection to Firefox.
+
+#### Mac OS
+
+[https://support.apple.com/guide/mac-help/enter-proxy-server-settings-on-mac-mchlp2591/mac](https://support.apple.com/guide/mac-help/enter-proxy-server-settings-on-mac-mchlp2591/mac)
+
+#### Linux
+
+This is for Ubuntu. You should search for your ditribution's instructions.
+
+[https://askubuntu.com/questions/912351/how-to-configure-to-auto-detect-proxy](https://askubuntu.com/questions/912351/how-to-configure-to-auto-detect-proxy)
+
+#### Windows
+
+[https://www.dummies.com/computers/operating-systems/windows-10/how-to-set-up-a-proxy-in-windows-10/](https://www.dummies.com/computers/operating-systems/windows-10/how-to-set-up-a-proxy-in-windows-10/)
