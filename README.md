@@ -61,8 +61,6 @@ The file must be named `proxy.pac`.
 
 ### OS wide proxy
 
-The problem with a system wide proxy is that if the proxy is broken then redirections to that proxy fail. This is why I prefer to limit this redirection to Firefox.
-
 #### Mac OS
 
 [https://support.apple.com/guide/mac-help/enter-proxy-server-settings-on-mac-mchlp2591/mac](https://support.apple.com/guide/mac-help/enter-proxy-server-settings-on-mac-mchlp2591/mac)
