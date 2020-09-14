@@ -31,7 +31,7 @@ function FindProxyForURL(url, host) {
     }
 
     if (proxyList.some(shouldProxyHost))
-        return `SOCKS5 localhost:1080`
+        return `SOCKS5 localhost:1080; DIRECT`
 
     return `DIRECT`
 }
