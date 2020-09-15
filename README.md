@@ -1,8 +1,8 @@
-# Firefox proxy auto-config (PAC)
+# Proxy Auto-Configuration (PAC)
 
 I explored this because I wanted have a browser that can search Google while accessing resources only available behind a firewall.
 
-My first Googlel search led me to [StackOverflow](https://superuser.com/questions/929861/how-to-enable-a-proxy-in-firefox-only-for-some-urls-and-not-for-every-page-i-vis) and consequently to [MozillaZine](http://forums.mozillazine.org/viewtopic.php?f=38&t=281605) and [WikiPedia](https://en.wikipedia.org/wiki/Proxy_auto-config).
+My first Google search led me to [StackOverflow](https://superuser.com/questions/929861/how-to-enable-a-proxy-in-firefox-only-for-some-urls-and-not-for-every-page-i-vis) and consequently to [MozillaZine](http://forums.mozillazine.org/viewtopic.php?f=38&t=281605) and [WikiPedia](https://en.wikipedia.org/wiki/Proxy_auto-config).
 
 These references and example were enough to get me started and I took the opportunity to refactor it and make it more flexible.
 
