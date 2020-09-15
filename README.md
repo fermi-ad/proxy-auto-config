@@ -51,7 +51,7 @@ Run this in a terminal to enable requests behind the firewall.
 
 ## Install proxy.pac
 
-Firefox enables users to proxy only the traffic from the browser rather than the whole system. Other browser use the OS proxy configuration to proxy traffic.
+While an OS wide proxy could be useful I found it difficult to troubleshoot and wasn't able to make it work on my MacBook Pro. There are recomendations from around the web to "just use the browser."
 
 ### Firefox
 
@@ -59,18 +59,8 @@ In the Firefox settings `about:preferences#general`>Network Settings there is a 
 
 The file must be named `proxy.pac`.
 
-### OS wide proxy
+### Chromium
 
-#### Mac OS
+The Chromium team recommends using an extension to enable a proxy on Chromium browsers. I found the [Proxy Switcher extension](https://mybrowseraddon.com/proxy-switcher.html) to be well liked and simple.
 
-[https://support.apple.com/guide/mac-help/enter-proxy-server-settings-on-mac-mchlp2591/mac](https://support.apple.com/guide/mac-help/enter-proxy-server-settings-on-mac-mchlp2591/mac)
-
-#### Linux
-
-This is for Ubuntu. You should search for your ditribution's instructions.
-
-[https://askubuntu.com/questions/912351/how-to-configure-to-auto-detect-proxy](https://askubuntu.com/questions/912351/how-to-configure-to-auto-detect-proxy)
-
-#### Windows
-
-[https://www.dummies.com/computers/operating-systems/windows-10/how-to-set-up-a-proxy-in-windows-10/](https://www.dummies.com/computers/operating-systems/windows-10/how-to-set-up-a-proxy-in-windows-10/)
+This also works with Firefox.
