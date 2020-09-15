@@ -64,3 +64,7 @@ The file must be named `proxy.pac`.
 The Chromium team recommends using an extension to enable a proxy on Chromium browsers. I found the [Proxy Switcher extension](https://mybrowseraddon.com/proxy-switcher.html) to be well liked and simple.
 
 This also works with Firefox.
+
+### Safari
+
+TODO
