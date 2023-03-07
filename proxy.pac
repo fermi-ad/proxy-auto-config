@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) {
     function shouldProxy() {
         return dnsDomainIs(host.toLowerCase(), 'fnal.gov')
-        || isInNet(host, '131.225.0.0', '255.255.0.0');
+        || isInNet(host, '131.225.0.0', '255.255.0.0', '10.200.0.0');
     }
 
     if (shouldProxy()) {
