@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function FindProxyForURL(url, host) {
     function shouldProxy() {
         return dnsDomainIs(host.toLowerCase(), 'fnal.gov')
