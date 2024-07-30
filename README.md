@@ -1,6 +1,6 @@
 # Proxy Auto-Configuration (PAC)
 
-Note: In order for this config to be used, the repo must be public so that the URL is reachable.
+Note: In order for this config to be used, the repo must be public so that the URL is reachable. This requires Kerberos authentication via SSH.
 
 I explored this because I wanted have a browser that can search Google while accessing resources only available behind a firewall.
 
